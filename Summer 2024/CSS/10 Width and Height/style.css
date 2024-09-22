@@ -1,0 +1,67 @@
+*
+{
+    box-sizing: border-box;
+    text-align: center;
+    color: hsl(44, 22%, 70%);
+}
+
+/* floating left */
+.grp1
+{
+    border: 3px solid rgb(137, 142, 148);
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    float: left;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+/* floating right */
+.grp2 
+{
+    border: 3px solid rgb(137, 142, 148);
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    float: right;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+/* min/max sets limits despite previos setting to propertis */
+
+.grp3 
+{
+    border: 3px solid rgb(137, 142, 148);
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    float: left;
+    margin-top: 13px;
+    margin-bottom: 20px;
+    max-width: 25%;
+}
+
+.grp4 
+{  
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    float: right;
+    margin-top: 13px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body
+{
+    background-color: rgb(41, 66, 94);
+}
+
+h2
+{
+    color: hsl(45, 35%, 69%);
+}

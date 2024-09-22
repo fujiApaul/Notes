@@ -1,0 +1,53 @@
+.box
+{
+    width: 25%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1
+{
+    background-color: palegreen;
+    position: static;
+}
+
+#box2
+{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+#absoluteBox
+{
+    background-color: rgba(120, 199, 120, 0.562);
+    width: 75%;
+    height: 45%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+
+#positionLabel
+{
+    color: rgb(116, 112, 108);
+}
+
+button
+{
+    margin-right: 10px;
+}
+
+#buttonBG
+{
+    padding: 20px;
+    background-color: #d6d4d4;
+}

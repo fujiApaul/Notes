@@ -1,0 +1,41 @@
+body
+{ 
+     background-color: slategray; /* named color */
+}
+
+#p1
+{
+    color: rgb(78, 80, 83); /* rgb value */
+}
+
+#p2
+{
+     color: #bda74e; /* hex code */
+}
+
+#p3
+{
+    color: hsl(45, 35%, 69%); /* hsl value */
+}
+
+#p4
+{
+    color: hwb(54 22% 71%); /* hwb value */
+}
+
+a:link
+{
+    color: #d9d7d1;
+}
+
+a:visited {
+    color: #2b2929;
+  }
+
+a:hover {
+    color: #a8a6a1;
+  }
+
+a:active {
+    color: slategray;
+  }

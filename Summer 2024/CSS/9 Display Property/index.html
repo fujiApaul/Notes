@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!--              Display Property              
+             HTML Elements have a default display value 
+             
+             display      = property that specifies 
+                       if/how an element is displayed
+
+             block-level  = start on a new line, take up
+                       the full width if available (h1,
+                       div, p, form, header, footer)
+
+             inline       = do not start on a new line,
+                       width is limited to what is 
+                       needed (span, a, img)
+             
+             inline_block = similar to block, however, 
+             also causes succeeding text to be inline 
+             with the text in the container
+         -->
+
+        <div id="box1">div</div>
+        <span id="box2">span</span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta et libero omnis, quasi molestias est nemo facere facilis beatae dolor voluptatum atque expedita? Dolores possimus illum est, cupiditate voluptates quisquam!
+
+        <br><br>
+
+        <button id="b1" title="display: revert" onclick="reset()">reset</button>
+        <button id="b2" title="display: block" onclick="block()">block</button>
+        <button id="b3" title="display: inline" onclick="inline()">inline</button>
+        <button id="b4" title="display: inline-block" onclick="inline_block()">inline-block</button>
+        <button id="b6" title="visibilty: hidden" onclick="hide()">hide</button>
+        <button id="b5" title="display: none" onclick="none()">none</button>
+
+        <script>
+
+            function reset()
+            {
+                document.getElementById("box1").style.display = "revert";
+                document.getElementById("box2").style.display = "revert";
+                document.getElementById("box1").style.visibility = "revert";
+                document.getElementById("box2").style.visibility = "revert";
+            }
+            
+            function block()
+            {
+                document.getElementById("box1").style.display = "block";
+                document.getElementById("box2").style.display = "block";
+            }
+
+            function inline()
+            {
+                document.getElementById("box1").style.display = "inline";
+                document.getElementById("box2").style.display = "inline";
+            }
+            
+            function inline_block()
+            {
+                document.getElementById("box1").style.display = "inline-block";
+                document.getElementById("box2").style.display = "inline-block";
+            }
+
+            function none()
+            {
+                document.getElementById("box1").style.display = "none";
+                document.getElementById("box2").style.display = "none";
+            }
+            
+            function hide()
+            {
+                console.log("hidden button has been clicked")
+                document.getElementById("box1").style.visibility = "hidden";
+                document.getElementById("box2").style.visibility = "hidden";
+            }
+        </script>
+
+    </body>
+</html>

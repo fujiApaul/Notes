@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- by default, width and height is set to auto -->
+    <h2>Float: left | height: auto | width: 50%</h2>
+    <div class="grp1">
+        <h2>This is #1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos debitis molestiae commodi laborum rerum quisquam recusandae voluptatum totam, cum corrupti vero dolorum excepturi. Distinctio vero voluptas dicta porro facere.</p>
+    </div>
+
+    <div class="grp1">
+        <h2>This is #2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos debitis molestiae commodi laborum rerum quisquam recusandae voluptatum totam, cum corrupti vero dolorum excepturi. Distinctio vero voluptas dicta porro facere.</p>
+    </div>
+
+    <hr>
+    <h2>Float: right | height: auto | width: 50%</h2>
+    <div class="grp2">
+        <h2>This is #1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos debitis molestiae commodi laborum rerum quisquam recusandae voluptatum totam, cum corrupti vero dolorum excepturi. Distinctio vero voluptas dicta porro facere.</p>
+    </div>
+
+    <div class="grp2">
+        <h2>This is #2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos debitis molestiae commodi laborum rerum quisquam recusandae voluptatum totam, cum corrupti vero dolorum excepturi. Distinctio vero voluptas dicta porro facere.</p>
+    </div>
+
+    <hr>
+    <div class="grp3">
+        <h2>This is #1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos debitis molestiae commodi laborum rerum quisquam recusandae voluptatum totam, cum corrupti vero dolorum excepturi. Distinctio vero voluptas dicta porro facere.</p>
+    </div>
+
+    <div class="grp3">
+        <h2>This is #2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam quos debitis molestiae commodi laborum rerum quisquam recusandae voluptatum totam, cum corrupti vero dolorum excepturi. Distinctio vero voluptas dicta porro facere.</p>
+    </div>
+
+    <div class="grp4">
+        <h2>Float: right | height: auto | width: 50%</h2>
+    </div>
+
+    <script>
+        const grp3 = document.querySelectorAll('.grp3');
+        const grp4 = document.querySelector('.grp4');
+
+        const updateGrp4Height = () => {
+            let maxHeight = 0;
+            grp3.forEach(box => {
+                const computedStyle = getComputedStyle(box);
+                const height = parseFloat(computedStyle.height);
+                if (height > maxHeight) {
+                    maxHeight = height;
+                }
+            });
+            grp4.style.height = `${maxHeight}px`;
+        };
+
+        // Initial height setting
+        updateGrp4Height();
+
+        // Create a MutationObserver to observe changes in .grp3 elements
+        const observer = new MutationObserver(updateGrp4Height);
+
+        // Observe all .grp3 elements for changes
+        grp3.forEach(box => {
+            observer.observe(box, { attributes: true, childList: true, subtree: true });
+        });
+
+        // Recalculate heights when window is resized
+        window.addEventListener('resize', updateGrp4Height);
+    </script>
+</body>
+</html>

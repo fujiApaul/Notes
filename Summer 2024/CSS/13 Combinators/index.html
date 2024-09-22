@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+
+        combinators = explains the relationship between listed selectors
+
+          = descendant
+        > = child
+        ~ = general sibling
+        + = adjacent sibling
+
+     -->
+
+    <div id="container">
+        <p id="p1">This is #1</p>
+        <p id="p2">This is #2</p>
+        <div>
+            <p id="p3">This is #3</p>
+        </div>
+    </div>
+    <p id="p4">This is #4</p>
+    <p id="p5">This is #5</p>
+
+    <div class="box">
+    <pre><strong>combinators = explains the relationship between listed selectors
+    
+         [ ]= descendant
+          > = child
+          ~ = general sibling
+          + = adjacent sibling
+
+            press any button for further explanations</strong></pre>
+    </div>
+    <div class="box">
+        <div id="buttonBG">
+
+            <button onclick="highlightDescendants()">descendant</button>
+            <button onclick="highlightChildren()">child</button>
+            <button onclick="highlightGeneralSiblings()">general sibling</button>
+            <button onclick="highlightAdjacentSiblings()">adjacent sibling</button>
+            <button onclick="reset()">reset</button>
+        
+        </div>
+    </div>
+
+    <script>
+
+        const descendants = document.querySelectorAll("#container p");
+        const children = document.querySelectorAll("#container > p");
+        const siblings = document.querySelectorAll("#container ~ p");
+        const adjacentSiblings = document.querySelectorAll("#container + p");
+
+        function highlightDescendants() 
+        {
+            children.forEach((child) => 
+            {
+                child.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            siblings.forEach((sibling) => 
+            {
+                sibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            adjacentSiblings.forEach((adjacentSibling) => 
+            {
+                adjacentSibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            descendants.forEach((descendant) => 
+            {
+                descendant.style.backgroundColor = "rgb(247, 247, 126)";
+            });
+
+            document.getElementById("p1").innerHTML = "hello";
+        }
+
+        function highlightChildren() 
+        { 
+            siblings.forEach((sibling) => 
+            {
+                sibling.style.backgroundColor = "rgb(192, 188, 188)v";
+            });
+
+            adjacentSiblings.forEach((adjacentSibling) => 
+            {
+                adjacentSibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            descendants.forEach((descendant) => 
+            {
+                descendant.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            children.forEach((child) => 
+            {
+                child.style.backgroundColor = "rgb(247, 247, 126)";
+            });
+        }
+
+        function highlightGeneralSiblings() 
+        {
+            adjacentSiblings.forEach((adjacentSibling) => 
+            {
+                adjacentSibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            descendants.forEach((descendant) => 
+            {
+                descendant.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            children.forEach((child) => 
+            {
+                child.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            siblings.forEach((sibling) => 
+            {
+                sibling.style.backgroundColor = "rgb(247, 247, 126)";
+            });
+        }
+
+        function highlightAdjacentSiblings()
+        { 
+            descendants.forEach((descendant) => 
+            {
+                descendant.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            children.forEach((child) => 
+            {
+                child.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            siblings.forEach((sibling) => 
+            {
+                sibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            adjacentSiblings.forEach((adjacentSibling) => 
+            {
+                adjacentSibling.style.backgroundColor = "rgb(247, 247, 126)";
+            });
+        }
+
+        function reset()
+        {
+            siblings.forEach((sibling) => 
+            {
+                sibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            adjacentSiblings.forEach((adjacentSibling) => 
+            {
+                adjacentSibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            descendants.forEach((descendant) => 
+            {
+                descendant.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+            children.forEach((child) => 
+            {
+                child.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+        }
+    </script>   
+
+</body>
+</html>
+
+<!-- 
+
+    descendants.forEach((descendant) => 
+            {
+                descendant.style.backgroundColor = "rgb(247, 247, 126)";
+            });
+    
+    children.forEach((child) => 
+            {
+                child.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+    siblings.forEach((sibling) => {
+                sibling.style.backgroundColor = "rgb(192, 188, 188)v";
+            });
+
+    adjacentSiblings.forEach((adjacentSibling) => {
+                adjacentSibling.style.backgroundColor = "rgb(192, 188, 188)";
+            });
+
+ -->
+

@@ -1,0 +1,49 @@
+div
+{
+    border: 3px solid;
+    height: 150px;
+    margin-bottom: 150px;
+}
+
+#box1
+{
+    overflow: visible;
+}
+
+#box2
+{
+    overflow: hidden;
+}
+
+#box3
+{
+    overflow: clip;
+    overflow-clip-margin: 25px;
+}
+
+#box4
+{
+    overflow: scroll;
+}
+
+#box5
+{
+    overflow: auto;
+    margin-bottom: 75px;
+}
+
+#container
+{
+    border: 0px;
+    height: 150px;
+    margin-bottom: 100px
+}
+
+#center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    border: 0px;
+}

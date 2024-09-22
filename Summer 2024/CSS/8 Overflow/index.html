@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- overflow = property that sets the desired
+             behavior when content does not fit the 
+             parent element box (overflows) 
+             
+             overflow: visible
+             overflow: hidden
+             overflow: clip
+             overflow: scroll
+             overflow: auto 
+         -->
+
+        <div id="box1">
+            <h3>Visible Overflow (default)</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta eos earum et vel, modi ad temporibus impedit neque, cupiditate quaerat dolor rerum possimus ducimus provident minus sint. Laborum, expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa voluptatum illum odio eos quo blanditiis similique! Deleniti vero, cum nostrum beatae neque quaerat! Esse, eos. Nulla et vel laborum.</p>
+        </div>
+
+        <div id="box2">
+            <h3>Hidden Overflow</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta eos earum et vel, modi ad temporibus impedit neque, cupiditate quaerat dolor rerum possimus ducimus provident minus sint. Laborum, expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa voluptatum illum odio eos quo blanditiis similique! Deleniti vero, cum nostrum beatae neque quaerat! Esse, eos. Nulla et vel laborum.</p>
+        </div>
+
+        <div id="box3">
+            <h3>Overflow: Clip</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta eos earum et vel, modi ad temporibus impedit neque, cupiditate quaerat dolor rerum possimus ducimus provident minus sint. Laborum, expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa voluptatum illum odio eos quo blanditiis similique! Deleniti vero, cum nostrum beatae neque quaerat! Esse, eos. Nulla et vel laborum.</p>
+        </div>
+
+        <div id="box4">
+            <h3>Overflow: Scroll</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta eos earum et vel, modi ad temporibus impedit neque, cupiditate quaerat dolor rerum possimus ducimus provident minus sint. Laborum, expedita?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsa voluptatum illum odio eos quo blanditiis similique! Deleniti vero, cum nostrum beatae neque quaerat! Esse, eos. Nulla et vel laborum.</p>
+        </div>
+
+        <div id="box5">
+            <h3>Overflow: Auto</h3>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem hic consequatur, numquam cupiditate sunt tempora, veniam dolorum tenetur vero eius quia! Facere fugit magni commodi eum repudiandae ex voluptatibus a?</p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem hic consequatur, numquam cupiditate sunt tempora, veniam dolorum tenetur vero eius quia! Facere fugit magni commodi eum repudiandae ex voluptatibus a?</p>
+        </div>
+
+        <div id="container">
+            <div id="center">
+                <button onclick="toggleText()" style="font-size: 25px; background-color: gray; color: aliceblue; border-radius: 25px;">Toggle Scroll on Auto (Shorten Text)</button>
+            </div>
+        </div>
+
+        <script>
+            let filler = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem hic consequatur, numquam cupiditate sunt tempora, veniam dolorum tenetur vero eius quia! " +
+            "Facere fugit magni commodi eum repudiandae ex voluptatibus a?";
+
+            function toggleText()
+            {
+                if (document.getElementById("p1").innerHTML == filler && document.getElementById("p2").innerHTML == filler)
+                {
+                    document.getElementById("p1").innerHTML = "hi";
+                    document.getElementById("p2").innerHTML = "hello";
+                }
+
+                else
+                {
+                    document.getElementById("p1").innerHTML = filler;
+                    document.getElementById("p2").innerHTML = filler;
+                }
+            }
+        </script>
+        
+
+    </body>
+</html>

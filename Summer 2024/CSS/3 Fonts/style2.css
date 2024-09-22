@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Monofett Regular ;
+    src: url(fonts/Monofett-Regular.ttf);
+}
+
+@font-face {
+    font-family: RampartOne Regular;
+    src: url(fonts/RampartOne-Regular.ttf);
+}
+
+body
+{
+    background-color: rgb(189, 183, 107);
+}
+
+h1
+{
+     color: rgb(111, 128, 30);
+     font-family: Monofett Regular, 'JetBrains Mono', Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 4em;
+}
+
+p
+{
+    color: rgb(70, 67, 34);
+    font-family: RampartOne Regular, 'JetBrains Mono', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 4px;
+}

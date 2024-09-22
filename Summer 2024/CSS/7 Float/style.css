@@ -1,0 +1,32 @@
+#img1
+{
+    height: 175px;
+    float: left;
+    margin-right: 10px;
+}
+
+#img2
+{
+    height: 175px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+body
+{
+    border: 3px solid;
+    display: flow-root;
+}
+
+h4
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+p
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}

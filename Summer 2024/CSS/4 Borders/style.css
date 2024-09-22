@@ -1,0 +1,79 @@
+#p1
+{
+    border-style: solid;
+}
+
+#p2
+{
+    border-style: Dashed;
+}
+
+#p3
+{
+    border-style: dotted;
+}
+
+#p4
+{
+    border-style: double;
+}
+
+#p5
+{
+    border-style: groove;
+}
+
+#p6
+{
+    border-style: ridge;
+}
+
+#p7
+{
+    border-style: inset;
+}
+
+#p8
+{
+    border-style: outset;
+}
+
+#p9
+{
+    border-style: none;
+}
+
+#idk
+{
+    border: solid;
+    border-width: 5px;
+    border-color: blueviolet;
+    border-radius: 15px;
+}
+
+/* Short-hand syntax format:
+   border: (size) (type) (color) */
+
+#shortHand
+{
+    border: 3px double teal;
+    border-radius: 10px;
+}
+
+/* Directional short-hand */
+
+pre
+{
+    font-weight: bold;
+    border-bottom: 3px solid tomato;
+    border-top: 3px dashed mediumslateblue;
+    border-left: 3px double olivedrab;
+    border-right: 3px groove aquamarine;
+}
+
+body
+{
+    background-color: rgb(197, 195, 195);
+}
+
+

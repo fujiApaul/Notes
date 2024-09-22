@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>11 Positions</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- position:
+                relative = positioned relative to where it normally is
+                fixed = positioned relative to the viewport
+                absolute = positioned relative to nearest ancestor
+                sticky = positioned based on scroll position
+                static = default position for an element
+         -->
+        <pre id="topText">scroll to see differences</pre>
+        <div class="box" id="box1">
+            <div class="box" id="absoluteBox">
+                <pre><small id="absoluteText">absolute</small></pre>
+                
+            </div>
+            <pre id="positionLabel">Static (default)</pre>
+        </div>
+
+        <div class="box" id="box2">
+            <div id="buttonBG">
+            <button onclick="setToRelative()">relative</button>
+            <button onclick="setToFixed()">fixed</button>
+            <button onclick="setToAbsolute()">absolute</button>
+            <button onclick="setToSticky()">sticky</button>
+            <button onclick="setToStatic()">static</button>
+            </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste totam, quas ipsam numquam harum corrupti inventore perferendis et vel in fugiat quaerat aliquid! Consequatur incidunt nobis fugiat iure non dolorem.</p>
+
+        <script>
+            function setToRelative()
+            {
+                document.getElementById("positionLabel").innerHTML = "Relative\ntop: 100px\nbottom: 100px";
+                document.getElementById("box1").style.position = "relative";
+                document.getElementById("box1").style.top = "100px";
+                document.getElementById("box1").style.bottom = "100px";
+                document.getElementById("absoluteBox").style.visibility = "hidden";
+            }
+
+            function setToFixed()
+            {
+                document.getElementById("positionLabel").innerHTML = "Fixed";
+                document.getElementById("box1").style.position = "fixed";
+                document.getElementById("box1").style.top = "";
+                document.getElementById("box1").style.bottom = "";
+                document.getElementById("absoluteBox").style.visibility = "hidden";
+            }
+
+            function setToAbsolute()
+            {
+                document.getElementById("positionLabel").innerHTML = "Fixed";
+
+                document.getElementById("absoluteText").innerHTML = "Absolute" + '\n' + "left: 0px" + '\n' + "bottom: 0px";
+                document.getElementById("box1").style.position = "fixed";
+                document.getElementById("absoluteBox").style.left = "0px";
+                document.getElementById("absoluteBox").style.bottom = "0px";
+                document.getElementById("absoluteBox").style.visibility = "visible";
+            }
+
+            function setToSticky()
+            {
+                document.getElementById("positionLabel").innerHTML = "Sticky";
+                document.getElementById("box1").style.position = "sticky";
+                document.getElementById("box1").style.top = "0px";
+                document.getElementById("absoluteBox").style.visibility = "hidden";
+            }
+
+            
+            function setToStatic()
+            {
+                document.getElementById("positionLabel").innerHTML = "Static(default)";
+                document.getElementById("box1").style.position = "static";
+                document.getElementById("absoluteBox").style.visibility = "hidden";
+            }
+
+        </script>
+
+    </body>
+</html>

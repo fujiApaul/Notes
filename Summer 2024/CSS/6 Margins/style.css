@@ -1,0 +1,39 @@
+.box
+{
+    border: 3px dotted;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+}
+
+/* margin to all sides evenly */
+#box1
+{
+    background-color: tomato;
+    margin: 50px;
+}
+
+/* directional margin */
+#box2
+{
+    background-color: aquamarine;
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 75px;
+    margin-right: 100px;
+}
+
+#box3
+{
+    background-color: palevioletred;
+    margin: auto; 
+}
+
+#box4
+{
+    background-color: yellowgreen;
+    margin-left: auto;
+}
+
+

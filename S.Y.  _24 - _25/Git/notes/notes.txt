@@ -1,0 +1,59 @@
+1. Get Git
+    - https://www.git-scm.com/
+
+2. Configure Git
+    - git config --global user.name "(name)"
+    - git config --global user.email (email)
+    - git config --global init.default branch main
+    - other commands for help
+        - git config -h
+        - git help config
+
+3. Change directory to the files you want to track
+    - cd "(file location)"
+
+4. git init
+    - if you want to check the status of your files use the status commands
+        - git status
+
+5. Add files you want to track (add to staging)
+    - git add (file name)
+    - git status
+
+6. Ignore files you want to ignore
+    - create ".gitignore" file in same directory
+    - set up ignorefile
+        - Sample
+        # Ignore all text file
+        *.text
+
+7. Commit
+    - git commit -m "(your message)"
+
+8. You can check your files if it has been tampered with using the status and diff commands
+    - git status
+    - git diff (press q to exit)
+
+
+When developing, create another branch to make your changes and later, if satisfied, marge it back to main branch
+
+1. Create branch with descriptive identifier
+    - git branch (identifier)
+
+2. To check which branch you are currently on, use branch command
+    - git branch
+
+3. To switch to another branch, use the switch command
+    - git switch (existing branch)
+    - git branch
+
+4. Make changes to files, save, and then commit
+    - git commit -a -m "(message)"
+
+5. Merge branch to main branch
+    - git merge -m "(message)" (existing temporary branch)
+
+6. To delete temporary branches
+    - git branch -d (branch name)
+
+7. In an event of a merge conflict, please resolve conflicts, check results, and then commit again

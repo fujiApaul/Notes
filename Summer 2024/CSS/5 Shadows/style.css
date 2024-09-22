@@ -1,0 +1,14 @@
+/* text shadow syntax: (horizontal offset) (vertical offset) (blur) (color) */
+
+h1
+{
+    text-shadow: 3px 5px 5px rebeccapurple, -3px -5px 5px yellowgreen;
+}
+
+#box1
+{
+    width: 100px;
+    height: 100px;
+    background-color: slategray;
+    box-shadow: 3px 3px 5px;
+}

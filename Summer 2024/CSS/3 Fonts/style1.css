@@ -1,0 +1,22 @@
+body
+{
+    background-color: rgb(189, 183, 107);
+}
+
+h1
+{
+     color: rgb(111, 128, 30);
+     font-family: 'JetBrains Mono', Verdana, Geneva, Tahoma, sans-serif;
+     
+}
+
+p
+{
+    color: rgb(70, 67, 34);
+    font-family: 'Press Start 2P','JetBrains Mono', Courier, monospace;
+    font-size: 0.75em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 4px;
+}

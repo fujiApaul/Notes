@@ -1,0 +1,58 @@
+body
+{
+    background-color: rgb(192, 188, 188);
+}
+
+p
+{
+    padding: 10px;
+}
+
+#container
+{
+    border: 2px solid rgba(0, 0, 0, 0.205);
+    border-left: 2px solid rgb(214, 214, 14);
+}
+
+#container ~ p
+{
+    border-left: 2px solid rgb(2214, 214, 14);
+
+}
+
+#container p
+{
+    border-left: 2px solid rgb(218, 95, 218);
+    margin-left: 60px;
+}
+
+#container > p
+{
+    border-left: 2px solid rgb(68, 173, 68);
+    margin-left: 20px;
+}
+
+.box
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button
+{
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#buttonBG
+{
+    padding: 20px;
+    background-color: #d6d4d4;
+}
+
+/*     background-color: rgb(247, 247, 126); */
+
