@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Location Finder</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Location Finder</h1>
-  <label for="currentLocation">Enter your current location (in km):</label>
-  <input type="number" id="currentLocation" name="currentLocation">
-  <br><br>
-  <label for="destination">Choose your destination:</label>
-  <select id="destination">
-    <option value="A">Police Station</option>
-    <option value="B">Fast Food</option>
-    <option value="C">Mall</option>
-    <option value="D">Church</option>
-    <option value="E">Bank</option>
-  </select>
-  <br><br>
-  <button onclick="findNearestLocationAndDisplay()">Find Nearest Location</button>
-  <div id="result"></div>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <title>Location Finder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+    <div id="container">
+      <h1 >Location Finder</h1>
+      <label for="currentLocation">Enter your current location (in km):</label>
+      <input type="number" id="currentLocation" name="currentLocation">
+      <br><br>
+      <label for="destination">Choose your destination:</label>
+      <select id="destination">
+        <option value="A">Police Station</option>
+        <option value="B">Fast Food</option>
+        <option value="C">Mall</option>
+        <option value="D">Church</option>
+        <option value="E">Bank</option>
+      </select>
+      <br><br>
+      <button onclick="findNearestLocationAndDisplay()">Find Nearest Location</button>
+      <div id="result"></div>
+    </div>
+  </body>
 </html>
